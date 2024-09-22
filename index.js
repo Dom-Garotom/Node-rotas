@@ -7,11 +7,8 @@ const dataBase = new DatabaseMemory();
 
 
 server.get("/videos", (req, res ) =>{
-    const videos = dataBase.list();
-
-
-    console.log(dataBase.list());
-
+    const search = req.query.search;
+    const videos = dataBase.list(search);
 
     return res.send(videos);
 })
@@ -47,7 +44,7 @@ server.delete("/videos/delete/:id", ( req , res ) =>{
 
     dataBase.deleteVideos(videoid);
 
-    return res.status(200).send()
+    return res.status(204).send()
 })
 
 
