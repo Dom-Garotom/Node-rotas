@@ -2,20 +2,20 @@
 
 Este projeto é uma API simples para gerenciar informações de varios vídeos, construída com [Fastify](https://www.fastify.io/) e conectada a um banco de dados PostgreSQL. Ele permite realizar operações de CRUD (Create, Read, Update, Delete) em vídeos, com suporte para busca por título ou descrição.
 
-## Funcionalidades
+##Funcionalidades
 
 - Listar vídeos com filtro opcional de busca.
 - Criar um novo vídeo.
 - Atualizar as informações de um vídeo existente.
 - Deletar um vídeo.
 
-## Requisitos
+ Requisitos
 
 - Node.js (versão 16 ou superior)
 - PostgreSQL
 - Dependências do projeto (instaladas via `npm` ou `yarn`)
 
-## Instalação
+##Instalação
 
 1. Clone o repositório:
 
@@ -33,7 +33,7 @@ O servidor será iniciado na porta 3333, ou na porta definida pela variável de 
 
 ## Endpoints
 
-##Listar vídeos
+Listar vídeos
 
 ```bash
 GET /videos?search={term}
@@ -47,7 +47,7 @@ Exemplo de uso:
 GET /videos?search=Tutorial
 ```
 
-##Criar um vídeo
+Criar um vídeo
 
 ```bash
 POST /videos
@@ -65,7 +65,7 @@ Body:
 
 Resposta: 201 Created quando o vídeo é criado com sucesso.
 
-##Atualizar um vídeo
+Atualizar um vídeo
 
 ```bash
 PUT /videos/:id
@@ -86,7 +86,7 @@ Body:
 
 Resposta: 204 No Content quando o vídeo é atualizado com sucesso.
 
-##Deletar um vídeo
+Deletar um vídeo
 
 ```bash
 DELETE /videos/delete/:id
