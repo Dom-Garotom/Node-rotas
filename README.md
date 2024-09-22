@@ -2,7 +2,7 @@
 
 Este projeto é uma API simples para gerenciar informações de varios vídeos, construída com [Fastify](https://www.fastify.io/) e conectada a um banco de dados PostgreSQL. Ele permite realizar operações de CRUD (Create, Read, Update, Delete) em vídeos, com suporte para busca por título ou descrição.
 
-##Funcionalidades
+## Funcionalidades
 
 - Listar vídeos com filtro opcional de busca.
 - Criar um novo vídeo.
@@ -15,7 +15,7 @@ Este projeto é uma API simples para gerenciar informações de varios vídeos, 
 - PostgreSQL
 - Dependências do projeto (instaladas via `npm` ou `yarn`)
 
-##Instalação
+## Instalação
 
 1. Clone o repositório:
 
